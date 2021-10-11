@@ -39,10 +39,10 @@ end
 # explicit return value: 'Input Error' if character's length does not equal 1
 # hint: use String#ord
 def ascii_code(character)
-  if char.length === 1
-    char.ord
+  if character.length === 1
+    character.ord
   else
-    puts "Input Error"
+    "Input Error"
   end
 end
 
@@ -67,7 +67,7 @@ end
 # parameter: year (an integer)
 # return value: true if the year is between 2001 - 2100, otherwise return false
 # hint: use Comparable#between?
-def twenty_first_century(year)
+def twenty_first_century?(year)
   if year.between?(2001, 2100)
     return true
   else
