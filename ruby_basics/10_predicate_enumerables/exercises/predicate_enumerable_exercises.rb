@@ -1,6 +1,6 @@
 def coffee_drink?(drink_list)
   # use #include? to return true when the drink_list (array) contains the string "coffee" or "espresso"
-  drink_list.include?("coffee", "espresso")
+  drink_list.include?("coffee") || drink_list.include?("espresso")
 end
 
 def correct_guess?(guess_list, answer)
@@ -15,7 +15,7 @@ end
 
 def correct_format?(word_list)
   # use #none? to return true when none of the words in the word_list (array) are in upcase
-  word_list.none? { |word| word.upcase }
+  word_list.none? { |word| word == word.upcase }
 end
 
 def valid_scores?(score_list, perfect_score)
